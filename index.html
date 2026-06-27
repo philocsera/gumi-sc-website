@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>구미SC | GUMI SPORTS CLUB</title>
+    <meta
+      name="description"
+      content="구미스포츠클럽 공식 웹사이트. 구단소개, 조직도, 선수단, SNS, 오시는 길 안내."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="구미SC 홈">
+        <span class="brand-mark">G</span>
+        <span>
+          <strong>구미SC</strong>
+          <small>GUMI SPORTS CLUB</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="gnb" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="gnb" id="gnb" aria-label="주요 메뉴">
+        <a href="#club">구단소개</a>
+        <a href="#squad">선수단</a>
+        <a href="#sns">SNS</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" role="img" aria-label="야간 축구 훈련장 전경"></div>
+        <div class="hero-content">
+          <p class="kicker">GUMI SPORTS CLUB</p>
+          <h1 id="hero-title">구미SC</h1>
+          <p>
+            지역의 꿈과 실력을 함께 키우는 유소년 축구 클럽. 구미에서 시작해 더 큰 무대로
+            나아갑니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#squad">선수단 보기</a>
+            <a class="btn ghost" href="#location">오시는 길</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="구미SC 핵심 정보">
+          <span>TEAM</span>
+          <strong>U15 · U18</strong>
+          <span>HOME</span>
+          <strong>경북 구미</strong>
+        </aside>
+      </section>
+
+      <section class="section intro" id="club">
+        <div class="section-head">
+          <p class="kicker">CLUB</p>
+          <h2>구단소개</h2>
+        </div>
+        <div class="intro-grid">
+          <article class="message">
+            <h3>인사말</h3>
+            <p>
+              구미스포츠클럽은 선수들이 축구를 통해 바른 태도와 도전 정신을 배우고, 지역과
+              함께 성장하는 팀을 지향합니다. 한 명 한 명의 가능성을 세심하게 살피며 건강한
+              훈련 문화와 탄탄한 기본기를 만들어가겠습니다.
+            </p>
+          </article>
+          <article class="club-card">
+            <span class="card-label">대표</span>
+            <strong>배명식</strong>
+            <p>구미스포츠클럽 회장</p>
+          </article>
+          <article class="club-card">
+            <span class="card-label">U18 감독</span>
+            <strong>배기종</strong>
+            <p>구미SC U18</p>
+          </article>
+          <article class="club-card">
+            <span class="card-label">U15 감독</span>
+            <strong>배범근</strong>
+            <p>구미SC U15</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section organization" aria-labelledby="org-title">
+        <div class="section-head">
+          <p class="kicker">ORGANIZATION</p>
+          <h2 id="org-title">조직도</h2>
+        </div>
+        <div class="org-chart" aria-label="구미스포츠클럽 조직도">
+          <div class="org-node president">
+            <span>구미스포츠클럽 회장</span>
+            <strong>배명식</strong>
+          </div>
+          <div class="org-line"></div>
+          <div class="org-branches">
+            <div class="org-node">
+              <span>구미SC U18 감독</span>
+              <strong>배기종</strong>
+            </div>
+            <div class="org-node">
+              <span>구미SC U15 감독</span>
+              <strong>배범근</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location" id="location">
+        <div class="location-copy">
+          <p class="kicker">LOCATION</p>
+          <h2>오시는 길</h2>
+          <address>경북 구미시 박정희로 375-7<br />복합스포츠센터 2층 구미스포츠클럽</address>
+          <a
+            class="btn dark"
+            href="https://map.naver.com/p/search/%EA%B2%BD%EB%B6%81%20%EA%B5%AC%EB%AF%B8%EC%8B%9C%20%EB%B0%95%EC%A0%95%ED%9D%AC%EB%A1%9C%20375-7"
+            target="_blank"
+            rel="noreferrer"
+          >
+            지도에서 보기
+          </a>
+        </div>
+        <div class="map-card" aria-hidden="true">
+          <span>GUMI SC</span>
+          <strong>박정희로 375-7</strong>
+          <small>복합스포츠센터 2층</small>
+        </div>
+      </section>
+
+      <section class="section squad" id="squad">
+        <div class="section-head">
+          <p class="kicker">PLAYERS</p>
+          <h2>선수단</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="선수단 구분">
+          <button class="tab active" type="button" role="tab" aria-selected="true" data-team="u15">
+            U15
+          </button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-team="u18">U18</button>
+        </div>
+        <div class="player-summary">
+          <strong id="team-title">구미SC U15</strong>
+          <span id="team-count">30명</span>
+        </div>
+        <div class="players-grid" id="players-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section sns" id="sns">
+        <div class="section-head">
+          <p class="kicker">SOCIAL</p>
+          <h2>SNS</h2>
+        </div>
+        <div class="sns-grid">
+          <a class="sns-card instagram" href="https://www.instagram.com/fc_gumi_sc/" target="_blank" rel="noreferrer">
+            <span>Instagram</span>
+            <strong>@fc_gumi_sc</strong>
+          </a>
+          <a
+            class="sns-card youtube"
+            href="https://www.youtube.com/@%EB%92%B7%EB%B0%94%EB%9D%BC%EC%A7%80/videos"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>YouTube</span>
+            <strong>뒤바라지</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>구미SC</strong>
+        <p>경북 구미시 박정희로 375-7 (복합스포츠센터 2층) 구미스포츠클럽</p>
+      </div>
+      <dl>
+        <div>
+          <dt>사업자번호</dt>
+          <dd>223-82-72802</dd>
+        </div>
+        <div>
+          <dt>전화</dt>
+          <dd><a href="tel:010-3516-4917">010-3516-4917</a></dd>
+        </div>
+        <div>
+          <dt>대표</dt>
+          <dd>배명식</dd>
+        </div>
+        <div>
+          <dt>메일</dt>
+          <dd><a href="mailto:bae3805@naver.com">bae3805@naver.com</a></dd>
+        </div>
+      </dl>
+      <small>Copyright 2026 GUMI SPORTS CLUB. All rights reserved</small>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
